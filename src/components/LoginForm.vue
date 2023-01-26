@@ -2,12 +2,12 @@
  <div class="container">
   <div class="row">
     <div class="col">
-     <form action="POST">
-      <input type="text" placeholder="Username">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <a href="/register">Create Account</a>
-      <a class="btn btn-success" href="/home">Submit</a>
+     <form action="https://formspree.io/f/xdojdjnj" method="POST" target="_blank">
+      <input name="text" type="text" placeholder="Username">
+      <input name="email" type="email" placeholder="Email">
+      <input name="password" type="password" placeholder="Password">
+      <a href="/register" class="create">Create Account</a>
+      <a class="btn btn-success login mx-auto" href="/home">Login</a>
      </form>
     </div>
   </div>
@@ -22,6 +22,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.create{
+  color: black;
+
+}
+.create:hover{
+  background-color: lightgreen;
+  border-radius: 30px;
+
+}
 form{
   display: flex;
   flex-direction: column;
@@ -40,6 +49,12 @@ button{
 }
 
 a{
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.login{
+  height: 40px;
+  width: 90px;
+  margin: 10px;
 }
 </style>
