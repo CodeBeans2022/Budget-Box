@@ -1,25 +1,56 @@
 <template>
- <div class="container">
-<div class="row">
-  <div class="col">
-    <h2>Login Form</h2>
-  </div>
+  <div class="container">
+    <!-- <div class="row">
+      <div class="col">
+        <form action="https://formspree.io/f/xdojdjnj" method="POST" target="_blank">
+          <input name="text" type="text" placeholder="Username">
+          <input name="email" type="email" placeholder="Email">
+          <input name="password" type="password" placeholder="Password">
+          <a href="/register" class="create">Create Account</a>
+          <a class="btn btn-success login mx-auto" href="/home"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+              fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+              <path fill-rule="evenodd"
+                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg></a>
+        </form>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col">
+        <div class="shade">
+		<div class="blackboard">
+				<form class="form" action="https://formspree.io/f/xdojdjnj" method="POST" target="_blank">
+						<p>
+								<label>Name: </label>
+								<input type="text" />
+						</p>
+						<p>
+								<label>Email: </label>
+								<input type="text" />
+						</p>
+						<p>
+								<label>Password: </label>
+								<input type="password" />
+						</p>
+						<p class="wipeout">
+              <a href="/register" class="create">Create Account</a>
+          <a class="btn btn-success login mx-auto" href="/home"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+              fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+              <path fill-rule="evenodd"
+                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg></a>
+						</p>
+          </form>
+		</div>
 </div>
-  <div class="row">
-    <div class="col">
-     <form action="https://formspree.io/f/xdojdjnj" method="POST" target="_blank">
-      <input name="text" type="text" placeholder="Username">
-      <input name="email" type="email" placeholder="Email">
-      <input name="password" type="password" placeholder="Password">
-      <a href="/register" class="create">Create Account</a>
-      <a class="btn btn-success login mx-auto" href="/home"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-</svg></a>
-     </form>
+      </div>
     </div>
   </div>
- </div>
 </template>
 
 <script>
@@ -30,41 +61,166 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container{
-  margin-top: 70px;
-}
-.create{
-  color: black;
 
+.container {
+		height: 100%;
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
+		background-size: cover;
+   
 }
-.create:hover{
-  background-color: lightgreen;
-  border-radius: 30px;
 
+.shade {
+		overflow: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
 }
-form{
+
+.blackboard {
+		position: relative;
+		width: 640px;
+		margin: 7% auto;
+		border: tan solid 12px;
+		border-top: #bda27e solid 12px;
+		border-left: #b19876 solid 12px;
+		border-bottom: #c9ad86 solid 12px;
+		box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+		background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+		background-color: #333;
+}
+
+.blackboard:before {
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+		border: #2c2c2c solid 2px;
+		content: "Login Form";
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2.2em;
+		color: rgba(238, 238, 238, 0.7);
+		text-align: center;
+		padding-top: 20px;
+}
+
+.form {
+		padding: 70px 20px 20px;
+}
+
+.wipeout{
   display: flex;
   flex-direction: column;
 }
 
-input{
+a{
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+		position: relative;
+		margin-bottom: 1em;
+}
+
+label {
+		vertical-align: middle;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.6em;
+		color: rgba(238, 238, 238, 0.7);
+}
+
+p:nth-of-type(5) > label {
+		vertical-align: top;
+}
+
+input,
+textarea {
+		vertical-align: middle;
+		padding-left: 10px;
+		background: none;
+		border: none;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.6em;
+		color: rgba(238, 238, 238, 0.8);
+		line-height: .6em;
+		outline: none;
+}
+
+textarea {
+		height: 120px;
+		font-size: 1.4em;
+		line-height: 1em;
+		resize: none;
+}
+
+input[type="submit"] {
+		cursor: pointer;
+		color: rgba(238, 238, 238, 0.7);
+		line-height: 1em;
+		padding: 0;
+}
+
+input[type="submit"]:focus {
+		background: rgba(238, 238, 238, 0.2);
+		color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+		background: rgba(238, 238, 238, 0.2);
+		color: rgba(238, 238, 238, 0.2);
+		text-shadow: none;
+}
+
+::selection {
+		background: rgba(238, 238, 238, 0.4);
+		color: rgba(238, 238, 238, 0.3);
+		text-shadow: none;
+}
+
+/* .container {
+  margin-top: 70px;
+}
+
+.create {
+  color: black;
+
+}
+
+.create:hover {
+  background-color: lightgreen;
+  border-radius: 30px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
   margin-bottom: 20px;
   height: 50px;
   text-align: center;
   border: none;
   border-bottom: 1px solid black;
 }
-button{
+
+button {
   text-decoration: underline;
 }
 
-a{
+a {
   margin-bottom: 15px;
 }
 
-.login{
+.login {
   height: 40px;
   width: 70px;
   margin: 10px;
-}
+} */
 </style>
