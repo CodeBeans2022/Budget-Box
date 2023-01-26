@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Login Form</router-link> 
-   
-  </nav>
   <router-view/>
 </template>
 
